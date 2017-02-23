@@ -8,9 +8,9 @@ import org.woven.examples.model.Toy;
 import org.woven.examples.model.ToyType;
 import org.woven.examples.model.Truck;
 
-public class ToysFactory {
-    
-    public Toy produceToy(ToyType toyType) throws ToyTypeNotFoundException {
+public class SimpleFactory {
+
+    public Toy createToy(ToyType toyType) throws ToyTypeNotFoundException {
         Toy toy;
         switch(toyType) {
             case CAR : toy = new Car(4);break;
@@ -21,5 +21,4 @@ public class ToysFactory {
 
         return toy;
     }
-
 }
