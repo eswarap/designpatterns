@@ -5,6 +5,9 @@ import org.woven.examples.model.Toy;
 import org.woven.examples.model.ToyType;
 import org.woven.examples.simplefactory.SimpleFactory;
 
+/**
+ * Factory class for simple factory pattern
+ */
 public class SimpleToysFactory {
     
     public SimpleFactory simpleFactory;
