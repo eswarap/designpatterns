@@ -27,6 +27,10 @@ import org.woven.examples.shape.factory.GreenRectangleFactory;
 import org.woven.examples.shape.factory.RedCircleFactory;
 import org.woven.examples.shape.model.Shape;
 
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
 /**
  * Unit test for Shape and Color Factory App.
  */
@@ -36,20 +40,28 @@ public class ShapeFactoryTest {
     @Test
     public void testShapeAndColor() {
         RedCircleFactory  redCircleFactory = new RedCircleFactory();
+        BufferedImage image = new BufferedImage(10, 30, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = image.createGraphics();
         Color targetColor = redCircleFactory.getColor();
         Shape targetShape = redCircleFactory.getShape();
+        targetShape.draw(g);
+        targetColor.fill();
         Assert.assertEquals(targetColor.getColorType(), ColorType.RED);
         Assert.assertEquals(targetShape.getShapeType(), ShapeType.CIRCLE);
 
         GreenRectangleFactory greenRectangleFactory = new GreenRectangleFactory();
         targetColor = greenRectangleFactory.getColor();
         targetShape = greenRectangleFactory.getShape();
+        targetShape.draw(g);
+        targetColor.fill();
         Assert.assertEquals(targetColor.getColorType(), ColorType.GREEN);
         Assert.assertEquals(targetShape.getShapeType(), ShapeType.RECTANGLE);
 
         BlueSquareFactory blueSquareFactory = new BlueSquareFactory();
         targetColor = blueSquareFactory.getColor();
         targetShape = blueSquareFactory.getShape();
+        targetShape.draw(g);
+        targetColor.fill();
         Assert.assertEquals(targetColor.getColorType(), ColorType.BLUE);
         Assert.assertEquals(targetShape.getShapeType(), ShapeType.SQUARE);
 

@@ -27,7 +27,7 @@ public class Circle extends Shape {
         this.shapeType = _shapeType;
     }
 
-    protected void draw(Graphics g) {
+    public void draw(Graphics g) {
         LOG.info("i am a "+ this.getShapeType());
         g.drawOval(40,40,60,60);
     }

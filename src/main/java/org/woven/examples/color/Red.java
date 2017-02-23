@@ -25,7 +25,7 @@ public class Red extends Color {
         this.colorType = _colorType;
     }
 
-    protected void fill() {
-        LOG.info("i am red");
+    public void fill() {
+        LOG.info("i am "+this.getColorType());
     }
 }

@@ -23,7 +23,7 @@ public class Blue extends Color {
         this.colorType = _colorType;
     }
 
-    protected void fill() {
-        LOG.info("i am Blue");
+    public void fill() {
+        LOG.info("i am "+this.getColorType());
     }
 }

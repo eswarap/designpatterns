@@ -26,7 +26,7 @@ public class Square extends Shape{
     public Square(ShapeType _shapeType) {
         this.shapeType = _shapeType;
     }
-    protected void draw(Graphics g) {
+    public void draw(Graphics g) {
         LOG.info("i am a "+this.shapeType);
         g.drawRect(80,30,200,200);
     }

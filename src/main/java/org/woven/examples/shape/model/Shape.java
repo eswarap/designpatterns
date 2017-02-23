@@ -23,9 +23,9 @@ import java.awt.*;
  * Created by EswaraP on 23-02-2017.
  */
 public abstract class Shape {
-    ShapeType shapeType;
+    protected ShapeType shapeType;
 
     public abstract ShapeType getShapeType();
 
-    protected abstract void draw(Graphics g);
+    public abstract void draw(Graphics g);
 }

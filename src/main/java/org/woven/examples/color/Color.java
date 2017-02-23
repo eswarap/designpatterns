@@ -13,5 +13,5 @@ public abstract class Color {
 
     public abstract ColorType getColorType();
 
-    protected abstract void fill();
+    public abstract void fill();
 }

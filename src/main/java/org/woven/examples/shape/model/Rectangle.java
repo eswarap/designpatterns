@@ -25,7 +25,7 @@ public class Rectangle extends Shape {
     public Rectangle(ShapeType _shapeType) {
         this.shapeType = _shapeType;
     }
-    protected void draw(Graphics  g) {
+    public void draw(Graphics  g) {
         LOG.info("i am a "+this.shapeType);
         g.drawRect(200,100,100,200);
     }
