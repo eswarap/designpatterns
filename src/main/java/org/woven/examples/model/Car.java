@@ -1,13 +1,13 @@
-package org.eclipse.che.examples.model;
+package org.woven.examples.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Truck extends Toy {
+public class Car extends Toy {
     
-     private final static Logger LOG = LoggerFactory.getLogger(Truck.class);
+    private final static Logger LOG = LoggerFactory.getLogger(Car.class);
     
-    public Truck(int _wheels) {
+    public Car(int _wheels) {
         this.wheels = _wheels;
     }
 
@@ -18,6 +18,6 @@ public class Truck extends Toy {
 
     @Override
     public void drive() {
-         LOG.info("i am driving truck");   
+         LOG.info("i am driving car");   
     }
 }

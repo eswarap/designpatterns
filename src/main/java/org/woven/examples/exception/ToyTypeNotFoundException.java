@@ -1,4 +1,4 @@
-package org.eclipse.che.examples.exception;
+package org.woven.examples.exception;
 
 public class ToyTypeNotFoundException extends Exception {
 

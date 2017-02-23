@@ -1,12 +1,12 @@
-package org.eclipse.che.examples;
+package org.woven.examples.simplefactory;
 
-import org.eclipse.che.examples.exception.ToyTypeNotFoundException;
-import org.eclipse.che.examples.model.Car;
-import org.eclipse.che.examples.model.NullToy;
-import org.eclipse.che.examples.model.Scooter;
-import org.eclipse.che.examples.model.Toy;
-import org.eclipse.che.examples.model.ToyType;
-import org.eclipse.che.examples.model.Truck;
+import org.woven.examples.exception.ToyTypeNotFoundException;
+import org.woven.examples.model.Car;
+import org.woven.examples.model.NullToy;
+import org.woven.examples.model.Scooter;
+import org.woven.examples.model.Toy;
+import org.woven.examples.model.ToyType;
+import org.woven.examples.model.Truck;
 
 public class ToysFactory {
     

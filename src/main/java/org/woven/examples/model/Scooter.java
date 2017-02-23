@@ -1,4 +1,4 @@
-package org.eclipse.che.examples.model;
+package org.woven.examples.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

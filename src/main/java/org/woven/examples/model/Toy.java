@@ -1,4 +1,4 @@
-package org.eclipse.che.examples.model;
+package org.woven.examples.model;
 
 public abstract class Toy {
 
