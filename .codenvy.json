@@ -27,10 +27,10 @@
     "projects": [
       {
         "links": [],
-        "name": "console-java-simple",
+        "name": "designpatterns",
         "attributes": {
           "maven.artifactId": [
-            "console-java-simple"
+            "designpatterns"
           ],
           "maven.packaging": [
             "jar"
@@ -48,7 +48,7 @@
             "java"
           ],
           "git.repository.remotes": [
-            "https://github.com/che-samples/console-java-simple.git"
+            "https://github.com/che-samples/designpatterns.git"
           ],
           "maven.groupId": [
             "org.eclipse.che.examples"
@@ -56,12 +56,12 @@
         },
         "type": "maven",
         "source": {
-          "location": "https://github.com/che-samples/console-java-simple.git",
+          "location": "https://github.com/che-samples/designpatterns.git",
           "type": "git",
           "parameters": {}
         },
         "modules": [],
-        "path": "/console-java-simple",
+        "path": "/designpatterns",
         "problems": [],
         "mixins": [
           "git"
@@ -73,7 +73,7 @@
     "commands": [
       {
         "commandLine": "mvn -f ${current.project.path} clean install",
-        "name": "console-java-simple: build",
+        "name": "designpatterns: build",
         "attributes": {
           "previewUrl": ""
         },
@@ -81,7 +81,7 @@
       },
       {
         "commandLine": "mvn -f ${current.project.path} clean install && java -jar ${current.project.path}/target/*.jar",
-        "name": "console-java-simple: run",
+        "name": "designpatterns: run",
         "attributes": {
           "previewUrl": ""
         },
