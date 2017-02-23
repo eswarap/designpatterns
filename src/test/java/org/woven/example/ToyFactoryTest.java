@@ -1,4 +1,4 @@
-package org.woven.example.java;
+package org.woven.example;
 
 import org.junit.Before;
 import org.junit.Test;
