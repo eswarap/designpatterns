@@ -1,4 +1,9 @@
-package org.woven.example;
+/*
+ * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
+ * and the underlying source code used to format and display that content is licensed under the MIT license.
+ */
+
+package org.woven.example.toy;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,12 +11,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.woven.examples.exception.ToyTypeNotFoundException;
-import org.woven.examples.factorymethod.ToysFactory;
-import org.woven.examples.model.Toy;
-import org.woven.examples.model.ToyType;
-import org.woven.examples.simplefactory.SimpleFactory;
-import org.woven.examples.simplefactory.SimpleToysFactory;
+import org.woven.examples.toy.exception.ToyTypeNotFoundException;
+import org.woven.examples.toy.factorymethod.ToysFactory;
+import org.woven.examples.toy.model.Toy;
+import org.woven.examples.toy.model.ToyType;
+import org.woven.examples.toy.simplefactory.SimpleFactory;
+import org.woven.examples.toy.simplefactory.SimpleToysFactory;
 
 /**
  * Unit test for ToyFactory App.

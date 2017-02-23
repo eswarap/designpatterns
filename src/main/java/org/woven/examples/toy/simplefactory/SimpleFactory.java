@@ -3,10 +3,10 @@
  * and the underlying source code used to format and display that content is licensed under the MIT license.
  */
 
-package org.woven.examples.simplefactory;
+package org.woven.examples.toy.simplefactory;
 
-import org.woven.examples.exception.ToyTypeNotFoundException;
-import org.woven.examples.model.*;
+import org.woven.examples.toy.exception.ToyTypeNotFoundException;
+import org.woven.examples.toy.model.*;
 
 /**
  * Simple Factory class
