@@ -12,7 +12,7 @@ import org.woven.examples.simplefactory.SimpleFactory;
 import org.woven.examples.simplefactory.SimpleToysFactory;
 
 /**
- * Unit test for simple App.
+ * Unit test for ToyFactory App.
  */
 @RunWith(JUnit4.class)
 public class ToyFactoryTest {
