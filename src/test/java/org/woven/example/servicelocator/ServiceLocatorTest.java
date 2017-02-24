@@ -19,11 +19,11 @@ public class ServiceLocatorTest {
     public void testServiceLocator() {
         ServiceLocator serviceLocator = new ServiceLocator();
         
-        Service dbService = serviceLocator.getService(ServiceType.DatabaseService.name());
-        LOG.info(dbService.getServiceName());
-        Assert.assertEquals(dbService.getServiceName(), ServiceType.DatabaseService.name());
-        Service msgService = serviceLocator.getService(ServiceType.DatabaseService.name());
-        LOG.info(msgService.getServiceName());
-        Assert.assertEquals(msgService.getServiceName(), ServiceType.MessagingService.name());
+        Service dbService = serviceLocator.getService(ServiceType.DatabaseService);
+        LOG.info(dbService.getServiceType().toString());
+        Assert.assertEquals(dbService.getServiceType(), ServiceType.DatabaseService);
+        Service msgService = serviceLocator.getService(ServiceType.MessagingService);
+        LOG.info(msgService.getServiceType().toString());
+        Assert.assertEquals(msgService.getServiceType(), ServiceType.MessagingService);
     }
 }
