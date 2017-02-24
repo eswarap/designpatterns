@@ -7,15 +7,15 @@ public class InitialContext {
     
     private static final Logger LOG = LoggerFactory.getLogger(InitialContext.class);
     
-    public Object lookup(String jndiName){
+    public Object lookup(ServiceType serviceType){
    
-      if(jndiName.equalsIgnoreCase(ServiceType.DatabaseService.name())){
+      if(serviceType.equals(ServiceType.DatabaseService)){
          LOG.info("Looking up and creating a new DatabaseService object");
-         return new DatabaseService();
+         return new DatabaseService(ServiceType.DatabaseService);
       }
-      else if (jndiName.equalsIgnoreCase(ServiceType.MessagingService.name())){
+      else if (serviceType.equals(ServiceType.MessagingService)){
           LOG.info("Looking up and creating a new MessagingService object");
-         return new MessagingService();
+         return new MessagingService(ServiceType.MessagingService);
       }
       return null;		
    }

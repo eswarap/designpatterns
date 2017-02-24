@@ -4,12 +4,12 @@ public class ServiceLocator {
     
     private Cache cache = new Cache();
 
-    public Service getService(String serviceName) {
-        Service service = cache.getService(serviceName);
+    public Service getService(ServiceType serviceType) {
+        Service service = cache.getService(serviceType);
         
         if (service == null ) {
             InitialContext context = new InitialContext();
-            Service s = (Service)context.lookup(serviceName);
+            Service s = (Service)context.lookup(serviceType);
             cache.addService(s);
             service = s;
         }

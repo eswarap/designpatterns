@@ -1,7 +1,7 @@
 package org.woven.examples.servicelocator;
 
 public abstract class Service {
-    protected String serviceName;
+    protected ServiceType serviceType;
     public abstract void execute();
-    public abstract String getServiceName();
+    public abstract ServiceType getServiceType();
 }

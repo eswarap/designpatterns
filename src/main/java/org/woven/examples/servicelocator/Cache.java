@@ -11,9 +11,9 @@ public class Cache {
        serviceList = new ArrayList<>();
     }
 
-    public Service getService(String serviceName) {
+    public Service getService(ServiceType serviceType) {
         for(Service s:serviceList) {
-            if (serviceName.equalsIgnoreCase(s.getServiceName())) {
+            if (serviceType.equals(s.getServiceType())) {
                 return s;
             }
         }    

@@ -3,19 +3,16 @@
  * and the underlying source code used to format and display that content is licensed under the MIT license.
  */
 
-/*
- * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
- * and the underlying source code used to format and display that content is licensed under the MIT license.
- */
-
 package org.woven.example.shape;
 
 /**
  * Created by EswaraP on 24-02-2017.
  */
 
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -26,10 +23,6 @@ import org.woven.examples.shape.factory.BlueSquareFactory;
 import org.woven.examples.shape.factory.GreenRectangleFactory;
 import org.woven.examples.shape.factory.RedCircleFactory;
 import org.woven.examples.shape.model.Shape;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 
 /**
  * Unit test for Shape and Color Factory App.
