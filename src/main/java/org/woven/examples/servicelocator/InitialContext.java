@@ -7,16 +7,24 @@ public class InitialContext {
     
     private static final Logger LOG = LoggerFactory.getLogger(InitialContext.class);
     
-    public Object lookup(ServiceType serviceType){
+    /**
+     * Returns an Object of Service based on argument ServiceType 
+     * 
+     * @param ServiceType
+     * @return Object
+     */
+    public Object lookup(ServiceType paramServiceType){
+       
+      Service service = null; 
    
-      if(serviceType.equals(ServiceType.DatabaseService)){
+      if(paramServiceType.equals(ServiceType.DatabaseService)){
          LOG.info("Looking up and creating a new DatabaseService object");
-         return new DatabaseService(ServiceType.DatabaseService);
+         service = new DatabaseService(ServiceType.DatabaseService);
       }
-      else if (serviceType.equals(ServiceType.MessagingService)){
-          LOG.info("Looking up and creating a new MessagingService object");
-         return new MessagingService(ServiceType.MessagingService);
+      else if (paramServiceType.equals(ServiceType.MessagingService)){
+         LOG.info("Looking up and creating a new MessagingService object");
+         service = new MessagingService(ServiceType.MessagingService);
       }
-      return null;		
+      return service;		
    }
 }

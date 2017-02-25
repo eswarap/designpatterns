@@ -9,9 +9,9 @@ public class ServiceLocator {
         
         if (service == null ) {
             InitialContext context = new InitialContext();
-            Service s = (Service)context.lookup(serviceType);
-            cache.addService(s);
-            service = s;
+            Service localService = (Service)context.lookup(serviceType);
+            cache.addService(localService);
+            service = localService;
         }
         
         return service;

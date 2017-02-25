@@ -7,10 +7,18 @@ public class DatabaseService extends Service {
 
     private static final Logger LOG = LoggerFactory.getLogger(DatabaseService.class);
 
-    public DatabaseService(ServiceType _serviceType) {
-        this.serviceType = _serviceType;
+    /**
+     * Class constructor that takes ServiceType as argument
+     * 
+     * @param serviceType
+     */
+    public DatabaseService(ServiceType paramServiceType) {
+        this.serviceType = paramServiceType;
     }
     
+    /**
+     * 
+     */
     @Override
     public void execute() {
         LOG.info("execute database service");

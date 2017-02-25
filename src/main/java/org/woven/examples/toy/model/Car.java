@@ -1,16 +1,7 @@
-/*
- * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
- * and the underlying source code used to format and display that content is licensed under the MIT license.
- */
-
-/*
- * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
- * and the underlying source code used to format and display that content is licensed under the MIT license.
- */
-
-/*
- * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
- * and the underlying source code used to format and display that content is licensed under the MIT license.
+/**
+ * The content of this project itself is licensed under the 
+ * Creative Commons Attribution 3.0 license,and the underlying source code used to format 
+ * and display that content is licensed under the MIT license.
  */
 
 package org.woven.examples.toy.model;
@@ -20,10 +11,16 @@ import org.slf4j.LoggerFactory;
 
 public class Car extends Toy {
     
-    private final static Logger LOG = LoggerFactory.getLogger(Car.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Car.class);
     
-    public Car(int _wheels) {
-        this.wheels = _wheels;
+    /**
+     * Class constructor with argument paramWheels
+     * 
+     * @param paramWheels
+     * @returns Car
+     */
+    public Car(int paramWheels) {
+        this.wheels = paramWheels;
     }
 
     @Override
