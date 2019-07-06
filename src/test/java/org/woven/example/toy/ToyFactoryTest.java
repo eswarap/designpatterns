@@ -11,12 +11,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.woven.examples.toy.exception.ToyTypeNotFoundException;
-import org.woven.examples.toy.factorymethod.ToysFactory;
-import org.woven.examples.toy.model.Toy;
-import org.woven.examples.toy.model.ToyType;
-import org.woven.examples.toy.simplefactory.SimpleFactory;
-import org.woven.examples.toy.simplefactory.SimpleToysFactory;
+import org.learningpath.designpatterns.toy.exception.ToyTypeNotFoundException;
+import org.learningpath.designpatterns.toy.factorymethod.ToysFactory;
+import org.learningpath.designpatterns.toy.model.Toy;
+import org.learningpath.designpatterns.toy.model.ToyType;
+import org.learningpath.designpatterns.toy.simplefactory.SimpleFactory;
+import org.learningpath.designpatterns.toy.simplefactory.SimpleToysFactory;
 
 /**
  * Unit test for ToyFactory App.

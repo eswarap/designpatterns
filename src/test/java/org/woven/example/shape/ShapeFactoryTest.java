@@ -15,19 +15,17 @@ package org.woven.example.shape;
  */
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.woven.examples.color.Color;
-import org.woven.examples.color.ColorType;
-import org.woven.examples.color.ShapeType;
-import org.woven.examples.shape.factory.BlueSquareFactory;
-import org.woven.examples.shape.factory.GreenRectangleFactory;
-import org.woven.examples.shape.factory.RedCircleFactory;
-import org.woven.examples.shape.model.Shape;
+import org.learningpath.designpatterns.color.Color;
+import org.learningpath.designpatterns.color.ColorType;
+import org.learningpath.designpatterns.color.ShapeType;
+import org.learningpath.designpatterns.shape.factory.BlueSquareFactory;
+import org.learningpath.designpatterns.shape.factory.GreenRectangleFactory;
+import org.learningpath.designpatterns.shape.factory.RedCircleFactory;
+import org.learningpath.designpatterns.shape.model.Shape;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
