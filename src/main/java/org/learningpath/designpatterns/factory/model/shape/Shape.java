@@ -13,9 +13,14 @@
  * and the underlying source code used to format and display that content is licensed under the MIT license.
  */
 
-package org.learningpath.designpatterns.shape.model;
+/*
+ * The content of this project itself is licensed under the Creative Commons Attribution 3.0 license,
+ * and the underlying source code used to format and display that content is licensed under the MIT license.
+ */
 
-import org.learningpath.designpatterns.color.ShapeType;
+package org.learningpath.designpatterns.factory.model.shape;
+
+import org.learningpath.designpatterns.factory.model.color.ShapeType;
 
 import java.awt.*;
 

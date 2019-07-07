@@ -11,13 +11,21 @@
 package org.learningpath.designpatterns.factory;
 
 import org.learningpath.designpatterns.factory.model.color.Color;
+import org.learningpath.designpatterns.factory.model.color.ColorType;
+import org.learningpath.designpatterns.factory.model.color.Green;
+import org.learningpath.designpatterns.factory.model.color.ShapeType;
+import org.learningpath.designpatterns.factory.AbstractFactory;
+import org.learningpath.designpatterns.factory.model.shape.Rectangle;
 import org.learningpath.designpatterns.factory.model.shape.Shape;
 
 /**
  * Created by EswaraP on 23-02-2017.
  */
-public abstract class AbstractFactory {
-
-    protected abstract Color getColor();
-    protected abstract Shape getShape();
+public class GreenRectangleFactory extends AbstractFactory{
+    public Color getColor() {
+    return new Green(ColorType.GREEN);
+    }
+    public Shape getShape() {
+     return new Rectangle(ShapeType.RECTANGLE);
+    }
 }

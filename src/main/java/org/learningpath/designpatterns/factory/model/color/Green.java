@@ -3,7 +3,7 @@
  * and the underlying source code used to format and display that content is licensed under the MIT license.
  */
 
-package org.learningpath.designpatterns.color;
+package org.learningpath.designpatterns.factory.model.color;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
