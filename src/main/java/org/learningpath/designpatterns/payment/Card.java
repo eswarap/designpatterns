@@ -16,7 +16,6 @@ public abstract class Card implements PaymentMethod {
         this.expirationDate = expirationDate;
     }
 
-    @Override
     public void pay(int paise) {
         System.out.format("Paid ",paise);
     }
