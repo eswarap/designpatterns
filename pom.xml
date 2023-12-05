@@ -9,7 +9,7 @@
     <url>http://maven.apache.org</url>
     <properties>
              <junit>4.13.1</junit>
-             <logback-classic>1.2.0</logback-classic>
+             <logback-classic>1.2.13</logback-classic>
     </properties>             
     <dependencies>
         <dependency>
